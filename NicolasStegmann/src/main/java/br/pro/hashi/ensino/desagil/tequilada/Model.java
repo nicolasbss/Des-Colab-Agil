@@ -12,10 +12,9 @@ public class Model {
 		humanPlayer = new HumanPlayer(0, 0);
 	}
 
-	public void update() {
-		cpuPlayer.move(-1, -1);
+	public void update(int rowShift, int colShift) {
+		humanPlayer.move(rowShift, colShift);;
 	}
-
 	public Board getBoard() {
 		return board;
 	}

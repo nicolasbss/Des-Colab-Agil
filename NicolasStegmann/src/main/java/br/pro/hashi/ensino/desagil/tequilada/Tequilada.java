@@ -37,6 +37,9 @@ public class Tequilada {
 
             	// Exibe a janela.
             	frame.setVisible(true);
+            	
+            	// Adiciona o controlador como observador do teclado.
+            	frame.addKeyListener(controller);
 
             	// Cria o relogio
             	Timer timer = new Timer(1000, controller);
